@@ -1,0 +1,155 @@
+/* General body styling */
+body {
+    margin: 0; /* Remove default margins */
+    font-family: Helvetica, Arial, sans-serif; 
+}
+
+/* Styling header */
+body > header {
+    background-color: darkgray;
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    display: flex; /* This makes the header a flex container */
+    height: 12vh;
+    justify-content: space-around; /* Adjust the space between logo and nav */
+}
+
+/* Styling the header logo */
+#logo {
+    margin: 0;
+    font-family: "Fredoka One", sans-serif;
+    font-size: 2.5em; /* Adjust size for visual impact */
+}
+
+/* Styling footer */
+body > footer {
+    background-color: darkgray;
+    color: white; 
+    padding: 16px;
+    text-align: center;
+}
+
+/* Remove list styling for navigation */
+nav > ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; 
+    margin: 0;
+    display: flex; 
+    justify-content: center; /* Center the navigation */
+    gap: 20px; /* Space between links */
+}
+
+/* Styling nav links */
+nav > ul > li > a {
+    color: rgb(81, 73, 201);; /* White text for links */
+    text-decoration: none; /* Remove underlines */
+    font-size: 1.2em; 
+}
+
+nav > ul > li > a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Main content area styling */
+body > main > article {
+    width: 70%; /* Limit content width */
+    margin: auto; /* Center the content */
+    padding: 20px; /* Add some padding */
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Paragraph and heading styling inside main */
+body > main > article p {
+    font-size: 1em;
+    line-height: 1.6em; /* Better readability */
+}
+
+body > main > article h1, 
+body > main > article h2, 
+body > main > article h3 {
+    color: #333; /* Darker text for headings */
+    margin-top: 1em; 
+}
+
+/* Responsive font sizes */
+h1 {
+    font-size: 4vw;
+}
+
+p {
+    font-size: 1vw;
+}
+
+/* Styling buttons or links in content */
+button, .btn {
+    background-color: rgb(119, 75, 241);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: rgb(111, 64, 240);; /* Darker on hover */
+}
+
+#nav-ul {
+    display: flex; /* Flexbox applied to ul to align li elements in a row */
+  }
+  
+  #nav-ul > li {
+    padding: 8px;
+    margin: 16px; /* Adds spacing between nav links */
+  }
+  
+  body > header > nav > ul {
+    list-style: none; /* Removes bullet points from ul */
+    text-decoration: none;
+  }
+  
+  .navbutton {
+    color: white;
+    text-decoration: none; /* Removes underline from links */
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 15%; /* Gives buttons rounded corners */
+  }
+  
+  /* CSS Grid Layout Example */
+  #grid-container {
+    display: grid; /* This makes the parent a grid container */
+    grid-template-areas: 
+      'header header' 
+      'menu main' 
+      'footer footer'; /* Defines the layout of grid areas */
+    grid-template-columns: 3fr 7fr; /* 30/70 division of columns */
+  }
+  
+  header {
+    grid-area: header; /* Assigns header area in grid */
+  }
+  
+  #menu {
+    grid-area: menu; /* Assigns menu area in grid */
+  }
+  
+  #main-content {
+    grid-area: main; /* Assigns main content area in grid */
+  }
+  
+  footer {
+    grid-area: footer; /* Assigns footer area in grid */
+  }
+  
+  #menu nav a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    background-color: lightgrey;
+    margin: 4px 0;
+  }
